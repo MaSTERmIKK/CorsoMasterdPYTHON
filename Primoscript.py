@@ -6,7 +6,7 @@ x = "parola alfanumerica"   # String || Stringa || può contenere qualsiasi comb
 
 x = False     # Bool || Booleani || può contenere solo True o False
 
-x = 123.23434 # Numero cpomplesso FLOAT  può contenere numeri con al virgola fino ad una determinatA soglia
+x = 123.23434 # Numero complesso FLOAT  può contenere numeri con al virgola fino ad una determinatA soglia
 
 # Semplici: interi (int), interi lunghi (long), numeri in virgola mobile (float)
 # numeri complessi (complex), valori booleani (bool)
@@ -25,18 +25,18 @@ x = 123.23434 # Numero cpomplesso FLOAT  può contenere numeri con al virgola fi
 # Primi comandi " print  " e primi Operatori logici basilari ( =  e  == e != )
 
 
-# x = 25
-# y = "Master_D_MIRKO"
-# # scambiando i valori tutto funziona
-# x = y
-# y = 25
-# print(x)
-# print(y)
+x = 25
+y = "Master_D_MIRKO"
+# scambiando i valori tutto funziona
+x = y
+y = 25
+print(x)
+print(y)
 
-# x = y
 
-# print ( x == y )
-# print ( x != y )
+x = y
+print ( x == y )
+print ( x != y )
 
 
 
@@ -52,7 +52,7 @@ x = 123.23434 # Numero cpomplesso FLOAT  può contenere numeri con al virgola fi
 
 
 
-x = int(3)    # x ora sarà  '3'
+x = str(3)    # x ora sarà  '3'
 
 x2 = 3
 
