@@ -2,4 +2,4 @@
 Corso py
 
 
-Lezioni fatte : 2
+Lezioni fatte : 10
