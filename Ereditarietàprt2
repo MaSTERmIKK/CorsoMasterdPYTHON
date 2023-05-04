@@ -1,0 +1,108 @@
+
+
+class Parent():
+      
+    # Constructor
+    def __init__(self):
+        self.value = "Inside Parent"   # Genitore 
+          
+    # Parent's show method
+    def show(self):
+        print(self.value)
+        
+        
+          
+# Defining child class
+class Child(Parent):
+      
+    # Constructor
+    def __init__(self):
+        self.value = "Inside Child"    # figlio
+          
+    # Child's show method
+    def show(self):
+        print(self.value)
+          
+          
+# Driver's code
+obj1 = Parent()
+obj2 = Child()
+  
+obj1.show()
+obj2.show()
+
+#--------------------------------------------------------------------
+
+class Parent1():
+          
+    # Parent's show method
+    def show(self):
+        print("Inside Parent1")
+          
+# Defining Parent class 2
+class Parent2():
+          
+    # Parent's show method
+    def display(self):
+        print("Inside Parent2")
+          
+          
+# Defining child class
+class Child(Parent1, Parent2):
+          
+    # Child's show method
+    def show(self):
+        print("Inside Child")
+     
+        
+# Driver's code
+obj = Child()
+  
+obj.show()
+obj.display()
+
+
+#-------------------------------------------------------------------------------------------
+
+class Parent():
+      
+    def show(self):
+        print("Inside Parent")
+          
+class Child(Parent):
+      
+    def show(self):
+          
+        # Calling the parent's class
+        # method
+        Parent.show(self)
+        print("Inside Child")
+          
+# Driver's code
+obj = Child()
+obj.show()
+
+
+#Esempio 2:
+
+class Parent():
+      
+    Mirko = 11  
+      
+    def show(self):
+        print("Inside Parent")
+          
+class Child(Parent):
+    
+    M
+      
+    def show(self):
+          
+        # Calling the parent's class
+        # method
+        super().show()
+        print("Inside Child")
+          
+# Driver's code
+obj = Child()
+obj.show()
