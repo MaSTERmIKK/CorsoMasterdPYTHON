@@ -1,0 +1,43 @@
+# Esercizio:
+
+# Definire una classe astratta NumeroComplesso con due metodi astratti: 
+#     parte_reale() e parte_immaginaria(). Successivamente, creare due classi concrete 
+#     ComplessoAlgebrico e ComplessoPolare che ereditano dalla classe astratta NumeroComplesso. 
+
+# ----------------------------------------------------------------------------------------------------------
+#     La classe ComplessoAlgebrico rappresenterà i numeri complessi nella forma algebrica (a + bi), mentre 
+#     la classe ComplessoPolare li rappresenterà nella forma polare (r * cos(theta) + i * r * sin(theta)). 
+#     Implementare i metodi richiesti nelle classi concrete per calcolare la parte reale e la parte immaginaria.
+
+# Successivamente, implementare i seguenti metodi per entrambe le classi:
+
+# Metodo somma(): Questo metodo dovrebbe prendere un altro numero complesso come parametro e 
+# restituire un nuovo numero complesso che rappresenta la somma dei due numeri complessi.
+
+# Metodo moltiplica(): Questo metodo dovrebbe prendere un altro numero complesso come parametro e 
+# restituire un nuovo numero complesso che rappresenta il prodotto dei due numeri complessi.
+
+
+from abc import ABC, abstractmethod
+import math
+
+class NumeroComplesso(ABC):
+    
+    @abstractmethod
+    def parte_reale(self):
+        pass
+    
+    @abstractmethod
+    def parte_immaginaria(self):
+        pass
+    
+
+
+
+
+class ComplessoAlgebrico(NumeroComplesso):
+    pass
+
+class  ComplessoPolare(NumeroComplesso):
+    pass
+    
