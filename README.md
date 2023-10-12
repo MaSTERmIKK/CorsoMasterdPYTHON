@@ -1,5 +1,5 @@
 # CorsoMasterdPYTHON
-Corso py
+Corso python di master D repository materiali e script didattici aggiuntivi
 
 
-Lezioni fatte : 10
+
