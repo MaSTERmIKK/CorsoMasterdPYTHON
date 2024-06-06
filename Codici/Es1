@@ -1,0 +1,80 @@
+class Account:
+    def __init__(self, owner, balance=0):
+        self.owner = owner
+        self.__balance = balance  # Balance is private
+
+    def deposit(self, amount):
+        if amount > 0:
+            self.__balance += amount
+            print("Deposit successful.")
+        else:
+            print("Invalid deposit amount.")
+
+    def withdraw(self, amount):
+        if 0 < amount <= self.__balance:
+            self.__balance -= amount
+            print("Withdrawal successful.")
+        else:
+            print("Invalid withdrawal amount or insufficient funds.")
+
+    def get_balance(self):
+        return self.__balance  # Accessor method for private balance
+
+# Usage
+acc = Account("John")
+acc.deposit(100)
+print(acc.get_balance())
+acc.withdraw(50)
+print(acc.get_balance())
+
+
+
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+        self.__id = None  # ID privato non accessibile dall'esterno della classe
+
+    def set_id(self, id_number):
+        if id_number > 1000:
+            self.__id = id_number
+            print("ID set successfully.")
+        else:
+            print("Invalid ID. Must be greater than 1000.")
+
+    def get_id(self):
+        return self.__id  # Accesso method for private ID
+    
+    def usaGE (get_id):
+        pass
+
+
+    
+
+# Uso della classe
+p = Person("Alice", 30)
+p.set_id(1500)
+print(p.get_id())
+
+
+import re  # Importa il modulo per le espressioni regolari
+
+class User:
+    def __init__(self, name):
+        self.name = name
+        self.__email = None
+
+    def set_email(self, email):
+        if re.match(r"[^@]+@[^@]+\.[^@]+", email):  # Validazione semplice dell'email
+            self.__email = email
+            print("Email address is valid and set.")
+        else:
+            print("Invalid email address.")
+
+    def get_email(self):
+        return self.__email
+
+# Uso della classe
+u = User("Bob")
+u.set_email("bob@example.com")
+print(u.get_email())

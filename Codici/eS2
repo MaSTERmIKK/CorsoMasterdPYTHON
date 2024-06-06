@@ -1,0 +1,63 @@
+class ContoBancario:
+    def __init__(self, titolare, saldo_iniziale):
+        self.__titolare = titolare  # Attributo privato (name mangling)
+        self.__saldo = saldo_iniziale
+
+    def deposito(self, importo):
+        if importo > 0:
+            self.__saldo += importo
+            print(f"Deposito di {importo}€ effettuato. Nuovo saldo: {self.__saldo}€")
+        else:
+            print("L'importo del deposito deve essere maggiore di zero.")
+
+    def prelievo(self, importo):
+        if importo > 0 and importo <= self.__saldo:
+            self.__saldo -= importo
+            print(f"Prelievo di {importo}€ effettuato. Nuovo saldo: {self.__saldo}€")
+        else:
+            print("Importo del prelievo non valido o saldo insufficiente.")
+
+    def get_saldo(self):  # Metodo getter
+        return self.__saldo
+
+# Creazione di un oggetto ContoBancario
+conto1 = ContoBancario("Mario Rossi", 1000)
+
+# Operazioni sul conto
+conto1.deposito(500)
+conto1.prelievo(200)
+
+# Accesso al saldo tramite il metodo getter
+saldo_attuale = conto1.get_saldo()
+print(f"Saldo attuale del conto: {saldo_attuale}€")
+
+# Tentativo di accesso diretto all'attributo privato (non consentito)
+# print(conto1.__saldo)  # Genera un errore
+
+
+class Rettangolo:
+    def __init__(self, base, altezza):
+        self.__base = base
+        self.__altezza = altezza
+
+    @property  # Decoratore property
+    def base(self):
+        return self.__base
+
+    @base.setter  # Decoratore setter
+    def base(self, nuova_base):
+        if nuova_base > 0:
+            self.__base = nuova_base
+        else:
+            print("La base deve essere maggiore di zero.")
+
+    # Simile per altezza (ometto per brevità)
+    # ...
+
+# Creazione di un oggetto Rettangolo
+rettangolo1 = Rettangolo(5, 3)
+
+# Accesso e modifica delle proprietà
+print(f"Base iniziale: {rettangolo1.base}")
+rettangolo1.base = 8  # Usa il setter per modificare
+print(f"Base modificata: {rettangolo1.base}")
