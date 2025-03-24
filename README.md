@@ -23,8 +23,8 @@ Questa repository contiene tutto il materiale integrativo per il corso di Python
 
 ### Come Utilizzare Questo Repository
 
-1. **Consultare le Slide:** Troverai le slide in formato PDF organizzate per argomenti.
-2. **Eseguire il Codice:** I file di codice sono commentati e strutturati per aiutarti a comprendere meglio ogni concetto.
+1. **Slide:** Troverai le slide EXTRA in formato PDF organizzate per argomenti.
+2. **Codice:** I file di codice sono commentati e strutturati per aiutarti a comprendere meglio ogni concetto.
 3. **Documentazione aggiuntiva:** Per facilitare lo studio e l’applicazione pratica dei contenuti.
 
 Buono studio e buon Master D
